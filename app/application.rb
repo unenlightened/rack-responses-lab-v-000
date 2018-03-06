@@ -11,4 +11,3 @@ class Application
   end
 
 end
-ex
