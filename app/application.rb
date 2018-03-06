@@ -5,7 +5,7 @@ class Application
 
     time = Time.new
     noon = Time.new(time.year, time.month, time.day, 12)
-    resp.write time < noon ? "Good Morning!" : "Good Afternoon!"
+    resp.write time.hour < 12 ? "Good Morning!" : "Good Afternoon!"
 
     resp.finish
   end
