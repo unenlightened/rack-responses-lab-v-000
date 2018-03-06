@@ -5,10 +5,11 @@ class Application
     resp = Rack::Response.new
 
     time = Time.new
-    noon = DateTime.new(time.year, time.month, time.day, 12)
+    noon = Time.new(time.year, time.month, time.day, 12)
     resp.write time < noon ? "Good Morning!" : "Good Afternoon!"
 
     resp.finish
   end
 
 end
+ex
